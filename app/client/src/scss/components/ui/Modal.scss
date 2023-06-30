@@ -1,0 +1,22 @@
+@import 'src/scss/global.scss';
+
+.Modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: $shadow-modal;
+
+    .Content {
+        display: flex;
+        flex-direction: column;
+
+        box-sizing: border-box;
+        padding: 50px;
+        border: 2px solid $theme-dark;
+
+    }
+}

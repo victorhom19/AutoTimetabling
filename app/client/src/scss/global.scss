@@ -1,0 +1,60 @@
+$theme-dark: rgba(83, 83, 83);
+$theme-light: rgba(137, 137, 137);
+$shadow: rgb(0, 0, 0, 0.1);
+$shadow-modal: rgb(0, 0, 0, 0.4);
+$error: rgba(255, 74, 74, 0.75);
+$success: rgba(33, 166, 73, 0.5);
+$accent-green: rgba(33, 166, 73);
+
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+html, body, #root, .App {
+  height: 100%
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+
+  background: white;
+
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  .Body {
+    display: flex;
+    flex: 1;
+
+    .Navigation { flex: 1; }
+    .Content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 3;
+    }
+
+  }
+
+
+
+  input {
+    outline: none
+  }
+
+}
+

@@ -1,0 +1,129 @@
+@import 'src/scss/global.scss';
+
+.ProjectSelectTab {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ProjectList {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        overflow: hidden;
+
+        width: 52vw;
+        max-width: 52vw;
+        height: 32vw;
+        padding-bottom: 40px;
+
+
+        border: 4px solid $theme-light;
+        border-radius: 25px;
+
+        h3 {
+            margin: 20px 0;
+            font-size: 30pt;
+            align-self: center;
+        }
+
+        .Scroller {
+
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            min-width: calc(100% + 30px);
+            max-height: 100%;
+
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            box-sizing: border-box;
+            padding: 30px 70px 50px 110px;
+
+            .NotFound {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                color: $theme-light;
+                font-size: 24pt;
+            }
+
+
+            .Option {
+                width: 100%;
+                height: 70px;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                font-size: 22pt;
+
+                box-sizing: border-box;
+                padding: 40px;
+
+                border-bottom: 2px solid $theme-light;
+
+                .Control {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+            }
+
+            .Option.Drop {
+                border-bottom: 2px dashed $theme-light;
+            }
+
+            .Content {
+                width: 100%;
+                padding: 30px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                textarea {
+                    box-sizing: border-box;
+                    padding: 20px;
+                    width: 100%;
+                    resize: none;
+                    color: $theme-light;
+                    border-radius: 10px;
+                    border: 3px solid $theme-dark;
+                }
+
+                button {
+                    margin-top: 20px;
+                    align-self: center;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    border: 3px solid $theme-dark;
+                    font-size: 16pt;
+                }
+                border-bottom: 3px solid black;
+            }
+        }
+    }
+
+
+
+}

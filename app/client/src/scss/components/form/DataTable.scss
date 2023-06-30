@@ -1,0 +1,101 @@
+@import 'src/scss/global.scss';
+
+.DataTable {
+    width: 95%;
+    height: 600px;
+    display: grid;
+    place-items: center;
+
+    grid-template-rows: repeat(auto-fill, 60px);
+
+    box-sizing: border-box;
+    outline: 4px solid $theme-light;
+
+
+    .SchemaCell {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        border: 2px solid $theme-light;
+        border-bottom-width: 4px;
+
+        font-size: 22pt;
+        background: rgba(138, 138, 138, 0.2);
+        z-index: 5;
+    }
+
+
+    .TableCell {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        box-sizing: border-box;
+
+        border-width: 0 2px 2px 2px;
+        border-color: $theme-light;
+        border-style: solid;
+        color: $theme-dark;
+        font-size: 12pt;
+
+        padding-inline: 5px;
+
+        text-align: center;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: none;
+            background: transparent;
+
+            img {
+                background: transparent;
+            }
+        }
+
+
+    }
+
+
+
+    .TableCell.Bottom, .TableCell.Bottom.First, .TableCell.Bottom.Last {
+        border-bottom-width: 0;
+    }
+
+    .TableCell.First {
+        border-width: 0 2px 2px 0;
+    }
+
+    .TableCell.Last {
+        border-width: 0 0 2px 2px;
+    }
+
+    .Create.First {
+        border-width: 0 2px 3px 0;
+    }
+
+    .Create {
+        border-width: 0 2px 3px 2px;
+    }
+
+    .Create.Last {
+        border-width: 0 0 3px 2px;
+    }
+
+    .Selected {
+        background: rgba(138, 138, 138, 0.2);
+        color: black;
+    }
+
+}
+
+.Pagination {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }

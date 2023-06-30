@@ -1,0 +1,14 @@
+@import 'src/scss/global.scss';
+
+.Logout {
+    position: absolute;
+    top: calc(7vh - 2px);
+    right: 2vw;
+
+    display: flex;
+
+    box-sizing: content-box;
+    padding: 10px 20px;
+    white-space: nowrap;
+    border: 2px solid $theme-light;
+}

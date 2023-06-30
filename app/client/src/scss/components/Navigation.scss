@@ -1,0 +1,100 @@
+@import 'src/scss/global.scss';
+
+.Navigation {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    border-right: 2px solid $theme-light;
+
+
+    height: 93vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .Scroller {
+        width: calc(100% + 20px);
+        box-sizing: border-box;
+        padding: 0 35px 35px 35px;
+        overflow-y: scroll;
+    }
+
+    .NavItem {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0;
+
+        border-bottom: 2px solid $theme-light;
+
+        h3 {
+            font-size: 20pt;
+        }
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .NavItemOption {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+
+            color: $theme-light;
+
+            user-select: none;
+
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 20px;
+
+            .Bullet {
+                flex-shrink: 0;
+                width: 20px;
+                height: 8px;
+                background: $theme-dark;
+                border-radius: 10px;
+            }
+
+        }
+
+
+        .NavItemOption.Top {
+            color: black;
+            border-bottom: 1px solid black;
+            padding-bottom: 15px;
+
+            .Bullet {
+                background: black;
+            }
+        }
+
+        .NavItemOption.Bottom {
+            color: black;
+            border-top: 1px solid black;
+            padding-top: 15px;
+            .Bullet {
+                background: black;
+            }
+        }
+
+        .NavItemOption.Selected {
+            color: $accent-green;
+            .Bullet {
+                background: $accent-green;
+            }
+        }
+
+        .NavItemOption.Error {
+            color: $error;
+            .Bullet {
+                background: $error;
+            }
+        }
+    }
+
+
+}

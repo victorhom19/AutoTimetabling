@@ -1,0 +1,51 @@
+@import 'src/scss/global.scss';
+
+.Signup {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 30vw;
+
+    h3 {
+    font-size: 20pt;
+    margin-bottom: 20px;
+    }
+
+    & > div {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 0;
+
+        label {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            font-size: 14pt;
+
+            box-sizing: border-box;
+            padding: 5px 10px;
+            border: 2px solid $theme-light;
+        }
+
+        input.Error {
+            background: $error;
+        }
+
+    }
+
+
+
+    button {
+        margin-top: 20px;
+    }
+
+}

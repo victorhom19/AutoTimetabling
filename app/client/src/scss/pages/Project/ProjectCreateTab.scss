@@ -1,0 +1,87 @@
+@import 'src/scss/global.scss';
+
+.ProjectCreateTab {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ProjectCreateForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        width: 52vw;
+        height: 32vw;
+
+        box-sizing: border-box;
+        padding: 30px 70px 30px 110px;
+        border: 4px solid $theme-light;
+        border-radius: 25px;
+
+        gap: 40px;
+
+        h3 {
+            font-size: 30pt;
+            align-self: center;
+
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+
+            label {
+                font-size: 20pt;
+            }
+
+            input {
+                flex: 1;
+                padding: 0 20px 0 10px;
+                height: 40px;
+                border-radius: 10px;
+                border: 3px solid $theme-dark;
+                font-size: 18pt;
+            }
+        }
+
+        label {
+            font-size: 20pt;
+        }
+
+        & > textarea {
+            margin-top: -20px;
+            width: 100%;
+            height: 30vh;
+            resize: none;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 10px;
+            border: 3px solid $theme-dark;
+            font-size: 16pt;
+        }
+
+        button {
+            align-self: center;
+            margin-top: 20px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: 3px solid $theme-dark;
+            font-size: 20pt;
+        }
+
+        button.Error {
+            background: $error;
+        }
+
+        button.Success {
+            background: $success;
+        }
+    }
+}
